@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>COOFE - Bot de Moderação</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to bottom right, #1e1e2f, #0f0f1a);
+      color: white;
+      line-height: 1.6;
+    }
+    header, footer {
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    p.lead {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto 1.5rem;
+    }
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .btn {
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 12px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+    .btn.discord {
+      background: #5865F2;
+      color: white;
+    }
+    .btn.discord:hover {
+      background: #4752c4;
+    }
+    .btn.painel {
+      background: transparent;
+      border: 2px solid white;
+      color: white;
+    }
+    .btn.painel:hover {
+      background: white;
+      color: black;
+    }
+
+    section {
+      padding: 4rem 1rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: #1f1f35;
+      padding: 1.5rem;
+      border: 1px solid #2e2e50;
+      border-radius: 12px;
+    }
+    .card h3 {
+      color: #c084fc;
+      margin-bottom: 0.5rem;
+    }
+    footer {
+      border-top: 1px solid #2b2b3f;
+      font-size: 0.9rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>COOFE - O Bot de Moderação Supremo</h1>
+    <p class="lead">Potente. Robusto. Personalizável. COOFE é o bot de moderação mais completo que você vai usar.</p>
+    <div class="buttons">
+        <a href="https://discord.com/oauth2/authorize?client_id=1339062063678619738&scope=bot&permissions=8" class="btn discord">
+          Adicionar no Discord
+        </a>
+        <a href="https://painel.seubot.com" class="btn painel">Ver Painel</a>
+      </div>      
+  </header>
+
+  <section>
+    <h2 style="text-align:center; font-size: 2rem; margin-bottom: 2rem;">Por que escolher o COOFE?</h2>
+    <div class="grid">
+      <div class="card">✔ Moderação automática avançada</div>
+      <div class="card">✔ Painel web intuitivo</div>
+      <div class="card">✔ Logs e alertas em tempo real</div>
+      <div class="card">✔ Sistema antiflood e antiraid</div>
+      <div class="card">✔ Personalização por servidor</div>
+      <div class="card">✔ Atualizações constantes</div>
+    </div>
+  </section>
+
+  <section>
+    <h2 style="text-align:center; font-size: 2rem; margin-bottom: 2rem;">Comandos em Destaque</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>/ban</h3>
+        <p>Bane um usuário do servidor com motivos registrados.</p>
+      </div>
+      <div class="card">
+        <h3>/kick</h3>
+        <p>Expulsa um membro de forma rápida e eficiente.</p>
+      </div>
+      <div class="card">
+        <h3>/warn</h3>
+        <p>Avisa o membro e registra a infração.</p>
+      </div>
+      <div class="card">
+        <h3>/lockdown</h3>
+        <p>Trava todos os canais em caso de raid.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 COOFE. Desenvolvido por zefranco77.</p>
+  </footer>
+
+</body>
+</html>
